@@ -1,6 +1,13 @@
 import java.util.*;
 import java.io.*;
 
+/*
+	Trie data structure is used for faster prefix lookups of words O(k) where k is the length of the lookup word.
+	Space complexity O(c) where c is the length of distinct character nodes in the trie
+	This reduces storage for repeated words as storage only needed for distinct character nodes.
+	ex - ant & antarctica need only space to store antarctica as the word ant can be stored as prefix of antarctica & doesn't need additional space.
+
+*/
 
 public class Trie {
 	
